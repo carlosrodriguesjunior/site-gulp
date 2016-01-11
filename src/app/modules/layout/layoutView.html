@@ -1,0 +1,48 @@
+<div layout="row">
+  <md-sidenav layout="column" class="md-sidenav-left md-whiteframe-z2" md-component-id="left" md-is-locked-open="$mdMedia('gt-md')">
+    <md-toolbar class="md-tall md-hue-2">
+      <span flex></span>
+      <div layout="column" class="md-toolbar-tools-bottom inset">
+        <user-avatar></user-avatar>
+        <span></span>
+        <div>Firstname Lastname</div>
+        <div>email@domainname.com</div>
+      </div>
+    </md-toolbar>
+    <md-list>
+    <md-item>
+      <md-button ng-click="vm.toggleSidenavAndGoToState('left','home')" class="md-sidenav-button">
+        <md-item-content md-ink-ripple layout="row" layout-align="start center" >
+          <div class="inset">
+            <i class="fa fa-home fa-3x"></i>
+          </div>
+          <div class="inset">Principal
+          </div>
+        </md-item-content>
+      </md-button>
+    </md-item>
+  </md-list>
+  </md-sidenav>
+
+  <div layout="column" class="relative" layout-fill role="main">
+    <md-toolbar  class="header">
+      <div class="md-toolbar-tools">
+        <md-button ng-click="toggleSidenav()" ng-hide="$mdMedia('gt-md')" aria-label="Menu">
+          <i class="fa fa-bars fa-3x"></i>
+        </md-button>
+        <h3 class="h3-site-title">
+          Gulp site
+        </h3>
+        <span flex></span>
+      </div>
+    </md-toolbar>
+
+    </md-toolbar>
+    <md-content flex md-scroll-y class="md-sidenav-content">
+      <div layout="column" layout-fill layout-padding ui-view="main" class="anim-in-out anim-fade" data-anim-speed="300"></div>
+
+    </md-content>
+  </div>
+
+
+</div>
