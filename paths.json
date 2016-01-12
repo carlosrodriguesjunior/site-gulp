@@ -1,0 +1,27 @@
+{
+  "sass": "./src/styles/*.scss",
+  "css": "./release/styles",
+  "release": "./release",
+  "html": "./src/**/*.html",
+  "not_html": "!./src/libs/**/*.html",
+  "libs": "./src/libs/**/*.js",
+  "libs_release": "./release/libs",
+  "js": "./src/app/**/*.js",
+  "js_release": "./release/app",
+  "config": "./src/app/config.json",
+  "app_release": "./release/app",
+  "fonts": "./src/libs/components-font-awesome/fonts/*",
+  "fonts_release": "./release/fonts",
+  "app": "./src/app",
+  "jsToRelease":[
+    "./src/libs/angular/angular.js",
+    "./src/libs/angular-animate/angular-animate.min.js",
+    "./src/libs/angular-aria/angular-aria.min.js",
+    "./src/libs/angular-messages/angular-messages.min.js",
+    "./src/libs/angular-material/angular-material.js",
+    "./src/libs/angular-ui-router/release/angular-ui-router.js",
+    "./src/app/**/*.js"
+  ],
+  "index_html":"./src/index.html",
+  "build":"./release/app/build.js"
+}
